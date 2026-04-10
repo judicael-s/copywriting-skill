@@ -1,0 +1,85 @@
+# Copywriting Skill
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+Copywriting toolkit for AI agents. 4 skills covering English web copy, French copy, social media (LinkedIn + X), and brand voice creation, with a built-in anti-AI-detection layer that makes all output sound human.
+
+Part of the [Marketing Intelligence Suite](https://github.com/judicael-s) alongside [Google Trends](https://github.com/judicael-s/google-trends-skill), [Google Analytics](https://github.com/judicael-s/google-analytics-skill), and [Google Search Console](https://github.com/judicael-s/google-search-console-skill).
+
+## Skills
+
+| Skill | What it does | Trigger phrases |
+|-------|-------------|----------------|
+| **copywriting** | Write/improve web page copy (homepage, landing, pricing, feature, about) | "write copy for", "headline help", "CTA copy", "value proposition" |
+| **french-copywriting** | Write marketing copy in French with native rules (tu/vous, typography, cultural nuance) | "French copy", "redaction web", "landing page francais" |
+| **social-copywriting** | Write platform-native posts for LinkedIn and X/Twitter | "LinkedIn post", "tweet", "thread", "write a post for" |
+| **tone-of-voice** | Generate a reusable brand voice guide through interactive questionnaire | "tone of voice", "brand voice", "how should we sound" |
+
+## What Makes This Different
+
+**Human voice by default.** Every skill enforces anti-AI-detection rules: banned vocabulary (50+ AI-flagged words replaced), punctuation limits (em dash cap), sentence rhythm variance (burstiness), and structural rules. Copy that sounds like a person wrote it.
+
+**Research before writing.** Every skill can optionally research competitors, customer language, and market context via web search before generating copy.
+
+**French-native.** Not translated English. Built with French typography rules, cultural nuance, tu/vous decision matrices, and French-specific AI detection avoidance.
+
+**Cross-skill integration.** Run `tone-of-voice` first to generate a brand voice guide. All other skills automatically load and follow it.
+
+## How Skills Work Together
+
+```
+tone-of-voice (run first)
+    -> generates .agents/tone-of-voice.md
+        -> copywriting reads it
+        -> french-copywriting reads it
+        -> social-copywriting reads it
+```
+
+All skills also check for `.agents/product-marketing-context.md` (from [marketingskills](https://github.com/coreyhaines31/marketingskills) suite).
+
+## Installation
+
+### Claude Code / Cursor / Windsurf
+
+```bash
+git clone https://github.com/judicael-s/copywriting-skill.git
+```
+
+Skills are compatible with any agent that follows the [Agent Skills specification](https://agentskills.io/specification.md).
+
+### File Structure
+
+```
+copywriting-skill/
+├── SKILL.md                          # English web copywriting
+├── skills/
+│   ├── french-copywriting/SKILL.md   # French copywriting
+│   ├── social-copywriting/SKILL.md   # LinkedIn + X copy
+│   └── tone-of-voice/SKILL.md        # Brand voice guide generator
+├── references/
+│   ├── human-voice-rules.md          # Anti-AI detection rules
+│   ├── french-frameworks.md          # French deep reference
+│   ├── linkedin-formats.md           # LinkedIn deep reference
+│   ├── x-formats.md                  # X/Twitter deep reference
+│   └── tone-dimensions.md            # Tone of voice frameworks
+├── README.md
+└── LICENSE
+```
+
+## References
+
+Each skill is backed by a deep reference document:
+
+- **human-voice-rules.md** — Banned AI vocabulary, punctuation rules, sentence rhythm targets, structural rules, French-specific AI tells. Loaded by every skill.
+- **french-frameworks.md** — Tu/vous decision matrix, French typography, 10 headline formulas, 30+ CTAs, power words, SEO rules, cultural nuances, false friends, anglicisms, tone spectrum (luxury to DTC).
+- **linkedin-formats.md** — Algorithm factors, character limits, 8 hook formulas, post structures (AIDA/PAS/1-3-1), carousel rules, profile copy, CTA patterns, common mistakes.
+- **x-formats.md** — Algorithm signals, character economy, 10 hook formulas, thread frameworks, viral patterns, bio formulas, niche guidance (tech/founder/marketing), common mistakes.
+- **tone-dimensions.md** — NN/g 4 dimensions, 7-dimension scoring model, 12 brand archetypes, "We are X but not Y" mapping, voice discovery questions, channel adaptation matrix, testing methods.
+
+## Credits
+
+Built by [Jules Sauvajol](https://github.com/judicael-s) — bilingual FR/EN digital marketer specializing in SEO, content strategy, and marketing automation.
+
+## License
+
+MIT
