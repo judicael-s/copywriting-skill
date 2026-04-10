@@ -1,9 +1,10 @@
 ---
 name: copywriting
-description: "When the user wants to write, rewrite, or improve marketing copy for any web page — homepage, landing page, pricing page, feature page, about page, or product page. Use when the user says 'write copy for,' 'improve this copy,' 'rewrite this page,' 'marketing copy,' 'headline help,' 'CTA copy,' 'value proposition,' 'tagline,' 'subheadline,' 'hero section copy,' 'above the fold,' 'this copy is weak,' 'make this more compelling,' or 'help me describe my product.' For French copy, see french-copywriting. For social media copy, see social-copywriting. For defining brand voice first, see tone-of-voice. For editing existing copy line-by-line, see copy-editing (external)."
+description: "When the user wants to write, rewrite, or improve marketing copy — web pages (homepage, landing, pricing, feature, about), email copy, ads, headlines, CTAs, value propositions, or any persuasive writing that must convert. Use when the user says 'write copy for,' 'improve this copy,' 'rewrite this page,' 'marketing copy,' 'headline help,' 'CTA copy,' 'value proposition,' 'tagline,' 'email copy,' 'subject line,' 'sales page,' or 'make this more compelling.' For French copy, see french-copywriting. For social media, see social-copywriting. For brand voice, see tone-of-voice."
 metadata:
-  version: 1.0.0
+  version: 2.0.0
   author: Jules Sauvajol
+  sources: "Eddie Shleyner (VeryGoodCopy), Drayton Bird, Bill Bernbach, Claude Hopkins, David Ogilvy, Eugene Schwartz, John Caples, Robert Collier, Gary Halbert"
 ---
 
 ## Role
@@ -19,11 +20,12 @@ Before writing a single word, load context in this order:
 1. **Check `.agents/product-marketing-context.md`** — if it exists, use it as the primary source of truth for the product, audience, and positioning. Do not re-ask what's already there.
 2. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to every piece of output. No deviations.
 3. **Load `references/human-voice-rules.md`** — apply all rules to every output. No exceptions.
-4. **Gather missing context** — only ask what is not already covered by the above files:
-   - **Page purpose:** What type of page is this? What is the ONE primary action you want visitors to take?
-   - **Audience:** Who are they? What problem are they trying to solve? What objections do they have? What language do they use (not you — them)?
-   - **Product/offer:** What is it? What makes it different? What transformation does it deliver? What proof points exist (stats, testimonials, case studies)?
-   - **Traffic source:** Where are visitors coming from? What do they already know when they land?
+4. **If the task involves email copy**, load `references/email-frameworks.md` for email-specific structures and checklists.
+5. **Gather missing context** — only ask what is not already covered by the above files:
+   - **Page purpose:** What type of page or piece is this? What is the ONE primary action?
+   - **Audience:** Who are they? What problem? What objections? What language do they use?
+   - **Product/offer:** What is it? What makes it different? What transformation? What proof?
+   - **Traffic source:** Where are visitors coming from? What do they already know?
 
 Ask only what is missing. Do not run a full intake if context files already answer it.
 
@@ -37,70 +39,99 @@ Before writing, ask the user:
 
 **If yes, use web search to:**
 
-- Find 2–3 competitor pages for the same page type. Note their headlines, subheadlines, CTAs, and value props. Identify what they all say (commoditized messaging to avoid) and where there are gaps.
-- Search for customer reviews, Reddit threads, or forum discussions about the product category. Extract real language: exact phrases, pain points, desired outcomes, and objections.
-- Search for trending hooks or angles in the space. Note what's resonating in ads, content, or social.
+- Find 2-3 competitor pages for the same page type. Note their headlines, subheadlines, CTAs, and value props. Identify commoditized messaging to avoid and gaps to exploit.
+- Search for customer reviews, Reddit threads, or forum discussions. Extract real language: exact phrases, pain points, desired outcomes, objections.
+- Search for trending hooks or angles. Note what's resonating in ads, content, or social.
 
-**Summarize findings in 3–4 bullets before writing.** Bring customer language directly into the copy — their words are more persuasive than yours.
+**Summarize findings in 3-4 bullets before writing.** Their words are more persuasive than yours.
+
+---
+
+## The Hierarchy: What Matters Most
+
+Before writing a single word, check these in order (Drayton Bird):
+
+1. **Targeting** — Are you writing to the right person? Wrong audience kills everything.
+2. **The offer** — What are you actually promising? The offer matters more than fancy creative.
+3. **The copy** — Now make the offer irresistible with words.
+
+If the targeting is wrong, no copy can save it. If the offer is weak, brilliant copy is wasted.
 
 ---
 
 ## Core Copywriting Principles
 
-Apply these five principles to every piece of copy, every time.
+Apply every principle, every time.
 
-**1. Clarity over cleverness**
-If you must choose between clear and creative, choose clear. Confusion kills conversions. A visitor who doesn't understand your value prop in five seconds will leave.
+**1. Truth over hype**
+A true statement stated plainly with a period is inherently compelling. If you're saying something someone really needs to hear, just say it. No exclamation marks. No manufactured urgency. No phoney warmth.
 
-**2. Benefits over features**
-Features = what the product does. Benefits = what that means for the customer's life or work. Lead with the benefit, support it with the feature.
-- Weak: "Automated reporting"
-- Strong: "Get your Monday report done before your first coffee"
+**2. Clarity over cleverness**
+If you must choose between clear and creative, choose clear. Confusion kills conversions. A visitor who doesn't understand your value prop in five seconds will leave. Read aloud — does it sound like someone talking?
 
 **3. Specificity over vagueness**
-Numbers, names, and concrete outcomes outperform adjectives. Every generic claim is an invitation not to believe you.
-- Weak: "Save time on reporting"
-- Strong: "Cut reporting from 4 hours to 15 minutes"
+Use 32, not "about 30." Numbers, names, and concrete outcomes outperform adjectives. Every generic claim is a trust tax the reader pays. Specificity builds credibility and creates implied promises.
 
-**4. Customer language over company language**
-Mirror the exact words your audience uses — from reviews, interviews, support tickets, Reddit, forums. Their phrasing is more persuasive than any internal vocabulary because it feels like reading their own mind.
+**4. Benefits over features — dimensionalized**
+Features = what the product does. Benefits = what that means for their life. But surface benefits have no pull. Keep asking "so what?" until you reach the core desire:
+- Feature: "Automated reporting" → Benefit: "No Monday morning data wrangling" → Core: "Start Monday feeling in control, not behind"
 
-**5. One idea per section**
-Each section of the page advances one argument. Do not stack multiple benefits or messages in a single block. Compression kills comprehension.
+Drill to ego, identity, belonging, or safety.
+
+**5. Customer language over company language**
+Mirror the exact words your audience uses — from reviews, interviews, support tickets, Reddit. Their phrasing is more persuasive than any internal vocabulary. Write from specific, singular experience — what is most personal is most universal (Carl Rogers).
+
+**6. Emotion drives action**
+Features inform; emotions move. The primary levers: **Gain, Pride, Self-preservation, Fear of Loss** (Robert Collier). When it's action you want, go for the emotions every time.
+
+**7. Show, don't tell**
+Don't tell the reader how to feel. Describe the outcome they experience. Leave holes for the reader to fill in with their own experience. "Set up in under five minutes, no training required" beats "incredibly easy to use."
+
+**8. One idea per section**
+Each section advances one argument. Do not stack multiple benefits or messages in a single block. Compression kills comprehension.
 
 ---
 
 ## Writing Style Rules
 
-Apply these six rules to every sentence. Check them before finalizing output.
+Apply to every sentence. Check before finalizing output.
 
 **1. Simple over complex**
-Use the shorter, everyday word. Readers scan. They do not parse.
+Use the shorter, everyday word. Readers scan.
 - Weak: "utilize", "facilitate", "leverage", "endeavor"
 - Strong: "use", "help", "use", "try"
 
 **2. Specific over vague**
-Remove empty modifiers. Every buzzword that appears without proof is a trust tax.
-- Weak: "streamline your workflow", "innovative solution", "best-in-class platform"
-- Strong: "close tickets 40% faster", "the only tool that does X", "ranked #1 by G2 for two years"
+Remove empty modifiers. Every buzzword without proof is noise.
+- Weak: "streamline your workflow", "innovative solution"
+- Strong: "close tickets 40% faster", "the only tool that does X"
 
 **3. Active over passive**
-Active voice is shorter and more direct. Passive voice hides the actor and weakens the claim.
-- Weak: "Reports are generated automatically by the system"
-- Strong: "The system generates reports automatically"
+Active voice is shorter and more direct. Passive hides the actor and weakens the claim.
 
 **4. Confident over qualified**
-Remove hedging words that undermine your message. If you're not confident in your claim, fix the claim — do not soften it with qualifiers.
-- Weak: "almost always works", "can really help", "very powerful"
-- Strong: "works", "helps", "powerful"
+Remove hedging words. If you're not confident in the claim, fix the claim — do not soften it.
 
-**5. Show over tell**
-Describe the outcome the customer experiences. Do not slap an adverb on a vague verb and call it persuasive.
-- Weak: "incredibly easy to use"
-- Strong: "set up in under five minutes, no training required"
+**5. Honest over sensational**
+Do not fabricate stats, invent testimonials, or make claims you cannot back up. One dishonest line poisons the whole page.
 
-**6. Honest over sensational**
-Do not fabricate stats, invent testimonials, or make claims you cannot back up. Trust is the foundation of conversion. One dishonest line poisons the whole page.
+**6. Sentence rhythm**
+Short sentences dominate. 8 words is easiest to read. Over 32 is hard. Use "short punch — short punch — longer explanation — short punch" cadence. Single-sentence paragraphs for emphasis. Fragments are acceptable for impact.
+
+**7. "You" outguns "we"**
+Count "you/your/yours" vs "we/our/us." If "you" doesn't lead 2-to-1, rewrite it.
+
+---
+
+## Persuasion Sequence
+
+For landing pages, sales pages, and any copy that must move the reader through a decision (Drayton Bird, via Derren Brown):
+
+1. **Qualify** — self-select the most likely prospects above the fold
+2. **Find common ground fast** — reveal something relatable in the first message
+3. **Ask for small actions first** — micro-commitments before big asks
+4. **Show them how to fit in** — peer proof, social validation
+5. **Strong guarantee + time limit** — remove risk, create urgency
 
 ---
 
@@ -108,24 +139,35 @@ Do not fabricate stats, invent testimonials, or make claims you cannot back up. 
 
 ### Above the Fold
 
-This is the most valuable real estate on any page. The visitor decides to stay or leave here.
+The most valuable real estate on any page. The visitor decides to stay or leave here.
 
 | Element | Purpose | Notes |
 |---|---|---|
 | Headline | Single most important message — the core value prop | Must be clear in isolation. If it only makes sense with context, rewrite it. |
-| Subheadline | Expands the headline, adds specificity | 1–2 sentences. Addresses who it's for or how it works. |
+| Subheadline | Expands the headline, adds specificity | 1-2 sentences. Addresses who it's for or how it works. |
 | Primary CTA | The one action you want them to take | Action-oriented. Communicates what they get, not what they do. |
 
-### Headline Formulas
+### Headline Formulas & Patterns
 
-Use these as starting points, not templates to fill in blindly. Adapt to the audience's actual language.
-
-- `{Achieve outcome} without {pain point}` — leads with desire, removes the main objection
-- `The {category} for {audience}` — positions clearly, best when category is understood
+**Formula templates** (adapt to audience language, don't fill in blindly):
+- `{Achieve outcome} without {pain point}` — leads with desire, removes main objection
+- `The {category} for {audience}` — clear positioning, best when category is understood
 - `Never {unpleasant recurring event} again` — leads with pain, strong for problem-aware audiences
-- `{Question that names the main pain point}` — pulls in self-identifying readers immediately
+- `{Question that names the main pain point}` — pulls in self-identifying readers
 
-Write at least two headline variations using different formulas. Present rationale for each.
+**Evidence-based patterns:**
+- **"How to..."** — Adding "How to" lifted response 50% in tested headlines (Caples)
+- **Counter-intuitive claim** — state the surprising result, then prove it
+- **Story opening** — in medias res, specific detail, no preamble
+- **Quote as opener** — short blockquote from authority, then unpack it
+
+**What to avoid:**
+- Template "scroll-stopper" hooks with "steal," "secret," "viral"
+- Exclamation marks (period does the work)
+- Vague superlatives ("amazing," "incredible," "game-changing")
+- Leading with what you'll teach instead of hooking emotionally
+
+Write at least two headline variations using different approaches. Present rationale for each.
 
 ### Core Page Sections
 
@@ -133,30 +175,18 @@ Write at least two headline variations using different formulas. Present rationa
 |---|---|
 | Social Proof | Logos, aggregate stats ("10,000+ teams"), short testimonials that address objections |
 | Problem / Pain | Show you understand their situation — their words, not yours. This is where they feel "seen." |
-| Solution / Benefits | 3–5 key benefits, each connected to a customer outcome. Not a feature list. |
-| How It Works | 3–4 steps. Reduce perceived complexity. Make the path to value feel short. |
+| Solution / Benefits | 3-5 key benefits, each connected to a customer outcome. Not a feature list. |
+| How It Works | 3-4 steps. Reduce perceived complexity. Make the path to value feel short. |
 | Objection Handling | FAQ, comparison tables, guarantees, risk reversals. Name the doubt before they voice it. |
-| Final CTA | Recap the core value in one sentence, repeat the CTA, add risk reversal ("No credit card required", "Cancel anytime"). |
+| Final CTA | Recap the core value in one sentence, repeat the CTA, add risk reversal. |
 
 ---
 
 ## CTA Guidelines
 
-The CTA is where intent becomes action. Weak CTAs lose conversions that the rest of the page already earned.
+**Avoid:** Submit, Sign Up, Learn More, Click Here, Get Started (without modifier)
 
-**Avoid:**
-- Submit
-- Sign Up
-- Learn More
-- Click Here
-- Get Started (acceptable only if paired with a strong modifier)
-
-**Use:**
-- Start Free Trial
-- Get [Specific Thing] — e.g., "Get Your Free Report", "Get the Audit"
-- See [Product] in Action
-- Create Your First [Thing] — e.g., "Create Your First Campaign"
-- Book a 20-Minute Demo (specific time = lower perceived commitment)
+**Use:** Start Free Trial, Get [Specific Thing], See [Product] in Action, Create Your First [Thing], Book a 20-Minute Demo
 
 **Formula:** `[Action Verb] + [What They Get] + [Qualifier if needed]`
 
@@ -165,38 +195,64 @@ Examples:
 - "Get the Competitive Audit" — verb + what
 - "See Acme in Action — Book a Demo" — two-part CTA for higher-intent visitors
 
-Always pair the primary CTA with a micro-commitment line if friction is high: "No credit card required." / "Takes 3 minutes." / "Cancel anytime."
+**Strategic rules:**
+- One primary CTA per piece — reduce decision fatigue
+- Always pair with a micro-commitment line if friction is high: "No credit card required." / "Takes 3 minutes."
+- Repeat the CTA near the end — same proposition, slightly different words
+- Use honest time pressure: "while this is fresh on your mind"
+- Always include a guarantee when possible — removes risk
+
+---
+
+## Preemptive Claims
+
+Be the first to say it publicly — even if others do it too (Claude Hopkins' Schlitz strategy). Tour your own factory. Describe the process that every competitor uses, but claim it first. When you say something first, you own it. Don't assume your audience knows what you do behind the scenes.
 
 ---
 
 ## Page-Specific Guidance
 
 ### Homepage
-- You are serving multiple audience segments simultaneously. Do not write for everyone — write for the primary segment, then give secondary segments a clear path (navigation, secondary CTAs).
-- The above-the-fold value prop must be the broadest, clearest version of what you do and who it's for.
-- Do not try to say everything. The homepage's job is to pull the right visitor deeper, not to close them.
+- Serving multiple segments simultaneously. Write for the primary segment, give secondary segments a clear path.
+- Above-the-fold value prop must be the broadest, clearest version of what you do and who it's for.
+- The homepage's job is to pull the right visitor deeper, not to close them.
 
 ### Landing Page
-- One message. One CTA. Remove navigation if possible — every exit point is a leak.
-- Match the headline exactly (or near-exactly) to the ad or email that drove the click. Mismatch between traffic source and landing page is the #1 conversion killer.
-- Everything on the page should support the single conversion goal. Remove anything that doesn't.
+- One message. One CTA. Remove navigation if possible.
+- Match the headline exactly to the ad or email that drove the click. Mismatch is the #1 conversion killer.
+- Everything supports the single conversion goal. Remove anything that doesn't.
 
 ### Pricing Page
-- The visitor's core anxiety is "which plan is right for me?" — answer it explicitly.
-- Name plans after audience segments or outcomes, not sizes ("Starter / Growth / Enterprise" beats "Basic / Pro / Premium").
-- Highlight the recommended plan visually and justify it ("Most popular for teams of 5–20").
-- Address price objections directly: ROI framing, money-back guarantee, comparison to cost of the problem.
+- Core anxiety: "which plan is right for me?" — answer it explicitly.
+- Name plans after outcomes, not sizes. Highlight the recommended plan and justify it.
+- Address price objections directly: ROI framing, guarantee, cost-of-problem comparison.
 
 ### Feature Page
-- Always connect: Feature → Benefit → Outcome. Never stop at the feature.
-- Lead with the outcome the feature creates, not the feature itself.
-- Use real use cases and job-to-be-done framing: "When you need to [situation], [feature] lets you [outcome]."
-- Include proof: before/after, metrics, short testimonials tied to that specific feature.
+- Feature → Benefit → Outcome. Never stop at the feature.
+- Use job-to-be-done framing: "When you need to [situation], [feature] lets you [outcome]."
+- Include proof: before/after, metrics, testimonials tied to that feature.
 
 ### About Page
-- Tell the story of why this company exists — the founding insight, the gap in the market, the problem the founders lived.
-- Connect the mission directly to the customer's benefit. "We believe X" only works if X is something the customer cares about.
-- Still include a CTA. The About page attracts high-intent visitors doing diligence — don't let them leave without a next step.
+- Tell the story of why this company exists — the founding insight, the gap, the problem the founders lived.
+- Connect the mission to the customer's benefit. "We believe X" only works if X matters to the customer.
+- Still include a CTA. About pages attract high-intent visitors doing diligence.
+
+---
+
+## Copy Review Checklist
+
+Run this on every draft before delivery. Every item must pass.
+
+1. **Who is this for?** Can you name the specific reader?
+2. **"You" count** — talks about the reader, not about you?
+3. **First sentence** — hooks or bores? Would you keep reading?
+4. **Benefit depth** — surface benefit or drilled to core desire?
+5. **Proof** — claims backed by specifics, testimonials, data?
+6. **Clarity** — read aloud. Any sentence you'd never say to a friend?
+7. **Tightness** — every paragraph earning its place? Cut ruthlessly.
+8. **CTA** — one clear action? Reader knows exactly what to do?
+9. **Truth** — would this embarrass you if the audience knew everything?
+10. **Human voice** — passes all checks in `references/human-voice-rules.md`?
 
 ---
 
@@ -211,7 +267,7 @@ If it does not exist, establish formality level and brand personality before wri
 - What brands does the client admire (even outside their category)?
 - What should this brand never sound like?
 
-Document the answers and apply them consistently across all sections. Inconsistent voice is a trust signal — badly.
+Document the answers and apply them consistently. Inconsistent voice erodes trust.
 
 ---
 
@@ -220,12 +276,27 @@ Document the answers and apply them consistently across all sections. Inconsiste
 Structure every deliverable as follows:
 
 1. **Page copy by section** — headline, subheadline, primary CTA, each body section, secondary CTAs, in page order
-2. **Annotations** — after each major section, 1–2 sentences explaining the key principle applied and why that choice was made
-3. **Alternatives** — 2–3 headline variations and 2–3 CTA variations with brief rationale for each
-4. **Meta content** — page title (50–60 characters) and meta description (140–160 characters) if relevant to the request
+2. **Annotations** — after each major section, 1-2 sentences explaining the key principle applied and why
+3. **Alternatives** — 2-3 headline variations and 2-3 CTA variations with brief rationale
+4. **Meta content** — page title (50-60 characters) and meta description (140-160 characters) if relevant
 5. **Compliance note** at the end of every output: "All output has been checked against `references/human-voice-rules.md`."
 
-Do not output a wall of copy. Section labels, annotations, and alternatives are not optional — they are what make the output usable.
+Do not output a wall of copy. Section labels, annotations, and alternatives are not optional.
+
+---
+
+## Key Authorities
+
+| Authority | Known For |
+|---|---|
+| Bill Bernbach | Truth in advertising |
+| Claude Hopkins | Scientific Advertising, specificity, preemptive claims |
+| David Ogilvy | "You cannot bore people into buying" |
+| Eugene Schwartz | Breakthrough Advertising, awareness levels |
+| John Caples | Tested Advertising Methods, headline testing |
+| Robert Collier | Emotional appeals drive action |
+| Drayton Bird | Direct-response, 64 years of tested results |
+| Eddie Shleyner | VeryGoodCopy, micro-lessons, narrative structure |
 
 ---
 
