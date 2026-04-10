@@ -174,6 +174,14 @@ Examples:
 - "The 5 mistakes I see on every founder's X profile: (a thread)"
 - "Phrases that are quietly destroying your credibility online:"
 
+### Choosing a Hook Formula
+
+Match formula to goal:
+- **Highest engagement:** Contrarian and Hot Take (drive quote-tweets and debate)
+- **Highest follows:** Specific Result and Number + Promise (signal value, attract followers)
+- **Best for threads:** Story and Open Loop (create tension that carries through multiple tweets)
+- **Use sparingly:** Unpopular Opinion and Hot Take are similar — pick one per week maximum. Overuse erodes credibility.
+
 ---
 
 ## 5. Thread Frameworks
@@ -498,3 +506,10 @@ Here's what's actually true:`
 What am I missing? Reply below — I read everything.
 
 And follow me if you want more of this.`
+
+---
+
+## Related References
+
+- **`references/human-voice-rules.md`** — Banned vocabulary applies. "Press release tone" is the #1 anti-pattern on X — human-voice-rules Section 1 (Tier 1 vocabulary) eliminates the worst offenders.
+- **`references/tone-dimensions.md`** — X typically operates at Directness 4-5, Energy 4-5, Humor 2-4, Formality 1-2. Match your brand's dimensions but push slightly toward X's native register.

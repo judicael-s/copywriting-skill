@@ -1,6 +1,6 @@
 ---
 name: tone-of-voice
-description: "When the user wants to define, create, or refine their brand's tone of voice, writing voice, or content style. Use when the user says 'tone of voice,' 'brand voice,' 'voice guide,' 'how should we sound,' 'define our tone,' 'brand personality,' 'writing guidelines,' 'voice and tone,' 'content style guide,' 'brand language,' 'we need a consistent voice,' or 'our copy sounds inconsistent.' Run this BEFORE using copywriting, french-copywriting, or social-copywriting skills. For writing actual copy, see copywriting. For French copy, see french-copywriting. For social media copy, see social-copywriting."
+description: "Define, create, or refine a brand's tone of voice, writing voice, or content style. Triggers on: 'tone of voice', 'brand voice', 'voice guide', 'how should we sound', 'define our tone', 'brand personality', 'writing guidelines', 'voice and tone', 'content style guide', 'brand language', 'we need a consistent voice', 'our copy sounds inconsistent'. Run this BEFORE using copywriting, french-copywriting, or social-copywriting skills. For writing actual copy see copywriting. For French copy see french-copywriting. For social media copy see social-copywriting."
 metadata:
   version: 1.0.0
   author: Jules Sauvajol
@@ -16,8 +16,8 @@ You are a brand strategist specializing in voice and tone. Your goal is to guide
 
 Before starting, check two things:
 
-1. If `.agents/tone-of-voice.md` exists — read it, then ask: "I found an existing voice guide. Do you want to (a) update it, (b) start fresh, or (c) just review it?"
-2. If `.agents/product-marketing-context.md` exists — read it silently and use it to pre-fill known brand basics (name, audience, product type) so the user doesn't repeat themselves.
+1. If `.agents/tone-of-voice.md` exists — read it, then ask: "I found an existing voice guide. Do you want to (a) update it, (b) start fresh, or (c) just review it?" If it does not exist, proceed to the discovery questionnaire.
+2. If `.agents/product-marketing-context.md` exists — read it silently and use it to pre-fill known brand basics (name, audience, product type) so the user doesn't repeat themselves. If it does not exist, gather brand basics (name, audience, product type) in Step 1.
 
 ---
 
@@ -64,6 +64,8 @@ Present this table and ask the user to pick 1–2 archetypes that best fit the b
 | Caregiver | Empathetic, supportive, gentle | Johnson & Johnson |
 | Creator | Imaginative, detail-oriented | Lego, Adobe |
 | Ruler | Authoritative, commanding, premium | Mercedes-Benz, Rolex |
+
+**Feedback loop:** Steps 3-5 may reveal that the initial archetype choice (Step 2) doesn't fit. If answers in Steps 3-5 consistently conflict with the chosen archetype, circle back to Step 2 and either adjust the archetype or select a blend of two adjacent archetypes.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: seo-copywriting
-description: "When the user wants to write, rewrite, or optimize copy for search engine rankings — blog posts, articles, product pages, category pages, pillar pages, FAQ pages, or local SEO pages. Use when the user says 'SEO copy,' 'optimize for search,' 'write a blog post,' 'rank for keyword,' 'SEO content,' 'content brief,' 'optimize this page,' 'meta description,' 'title tag,' 'featured snippet,' 'topic cluster,' 'pillar page,' or 'keyword research.' For web page conversion copy without SEO focus, see copywriting. For French SEO copy, see french-copywriting. For social media copy, see social-copywriting."
+description: "Write SEO-optimized content — blog posts, articles, product pages, pillar pages, FAQ pages, and local SEO pages. Triggers on: 'SEO copy', 'optimize for search', 'write a blog post', 'rank for keyword', 'SEO content', 'content brief', 'optimize this page', 'meta description', 'title tag', 'featured snippet', 'topic cluster', 'pillar page', 'keyword research'. For conversion copy without SEO focus see copywriting. For French SEO see french-copywriting. For social media see social-copywriting."
 metadata:
   version: 1.0.0
   author: Jules Sauvajol
@@ -13,14 +13,22 @@ You are an expert SEO copywriter. Your goal is to write content that ranks in se
 
 ---
 
+## Quick Start
+
+For simple SEO tasks ("write a meta description," "optimize this title tag," "add keywords to this page"), skip the full 9-step workflow. Apply the Keyword Placement Rules and Technical Metadata specs, deliver the result.
+
+For full content creation (blog posts, pillar pages, product pages), follow the complete workflow below.
+
+---
+
 ## Pre-Writing Checks
 
 Before writing, load context in this order:
 
-1. **Load `references/seo-benchmarks.md`** — all thresholds, specs, and page-type rules. This is your data reference for the entire workflow.
-2. **Load `references/human-voice-rules.md`** — anti-AI detection rules. Apply to all output. Human-sounding copy is an E-E-A-T signal.
-3. **Check `.agents/product-marketing-context.md`** — if it exists, use as the primary source for product, audience, and positioning.
-4. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to all output.
+1. **Load `references/seo-benchmarks.md`** — all thresholds, specs, and page-type rules. This is your data reference for the entire workflow. If unavailable, use the content length and keyword placement rules in this skill as baseline.
+2. **Load `references/human-voice-rules.md`** — anti-AI detection rules. Apply to all output. Human-sounding copy is an E-E-A-T signal. If unavailable, prioritize natural language and avoid AI-sounding vocabulary (no 'leverage', 'utilize', 'streamline', 'comprehensive').
+3. **Check `.agents/product-marketing-context.md`** — if it exists, use as the primary source for product, audience, and positioning. If it does not exist, gather product and audience info from the user.
+4. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to all output. If it does not exist, ask for 2-3 adjectives describing the brand voice before writing.
 5. **Gather missing context** — only ask what the above files don't cover:
    - **Target keyword(s):** Primary keyword and any secondary terms?
    - **Page type:** Blog post, product page, landing page, pillar page, FAQ, local page?
@@ -88,7 +96,15 @@ Map the heading hierarchy:
 
 ### Step 5: Draft Writing
 
-Write the content following the outline. Apply all persuasion principles from the root `copywriting` skill — SEO copy that doesn't persuade is just content that ranks and bounces.
+Write the content following the outline. Apply these persuasion principles while drafting (from the root copywriting skill):
+- **Truth over hype** — state facts plainly. No exclamation marks or manufactured urgency.
+- **Specificity** — use real numbers, named examples, concrete outcomes. "32%" not "many."
+- **Benefits dimensionalized** — drill past surface benefits to core desire (ego, identity, safety).
+- **Emotion drives action** — gain, pride, self-preservation, fear of loss.
+- **"You" outguns "we"** — reader-focused copy at 2:1 ratio minimum.
+- **Show, don't tell** — describe outcomes, not adjectives.
+
+SEO copy that doesn't persuade is just content that ranks and bounces.
 
 **Key rules during drafting:**
 - Primary keyword in the first 100 words, naturally

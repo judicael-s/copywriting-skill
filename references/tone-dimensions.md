@@ -97,6 +97,19 @@ An operational expansion of the NN/g framework for copy briefs and audits. Each 
 | 4 | Direct | States the point first, backs up after, blunt when warranted |
 | 5 | Blunt | No softening. Active voice always. Cuts everything non-essential. |
 
+### Dimension Interactions
+
+Some dimension combinations conflict. Watch for these:
+
+| Combination | Conflict | Resolution |
+|---|---|---|
+| Humor 4-5 + Formality 4-5 | Comedy and formality fight each other | Pick one to lead. Humor 4-5 usually requires Formality 1-3. |
+| Authority 4-5 + Warmth 4-5 | Expert tone can feel cold; warmth can undermine authority | Use warmth in openers/closers, authority in body content. |
+| Directness 4-5 + Warmth 4-5 | Blunt + warm is hard to sustain | Lead with warmth, end with directness. Alternate rather than blend. |
+| Technicality 4-5 + Humor 3-5 | Technical depth + jokes dilutes both | Use humor in intros/transitions only. Keep technical sections clean. |
+
+When the brand's scores create a conflict, discuss it explicitly with the user. The resolution often involves using different dimension emphasis in different sections of the page or different channels.
+
 ---
 
 ## 3. 12 Brand Archetypes
@@ -343,3 +356,10 @@ Give the guide to someone new to the brand. Ask them to write three pieces acros
 ### Exercise 4 — Context Flex Exercise
 
 Write the same message (e.g., "we're changing our pricing") across four contexts: marketing email, support FAQ, social post, in-app notification. All four should feel like the same brand. If one version sounds like a different company, the tone matrix for that channel needs more definition.
+
+---
+
+## Related References
+
+- **`references/human-voice-rules.md`** — Anti-AI detection rules apply on top of tone choices. A brand scoring Directness 1-2 should still avoid hedging language flagged in Section 6 of human-voice-rules — find alternatives that are soft but specific rather than vague.
+- **`references/french-frameworks.md`** — French cultural norms shift tone targets. French B2B typically requires higher Formality (3-5) than English B2B. See Section 12 (Spectre des registres) for French-specific tone calibration.

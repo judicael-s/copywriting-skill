@@ -140,54 +140,13 @@ For more formulas, sub-variations, and sector-specific examples: see `references
 
 ## CTA Guidance
 
-### First-Person vs. Imperative
+### Quick CTA Examples by Goal
 
-| Form | Example | When to use |
-|---|---|---|
-| Première personne | `Je veux mes résultats` | B2C, conversational, DTC |
-| Impératif direct | `Obtenez votre devis` | B2B, services, institutional |
-| Infinitif doux | `Découvrir la méthode` | Mid-funnel, low-commitment ask |
-| Question-réponse | `Prêt à commencer ?` | After strong emotional buildup |
-| Urgence naturelle | `Réserver ma place — il en reste 3` | Event, cohort, limited offer |
+**Inscription/opt-in:** "Recevez le guide gratuit", "Essayez gratuitement — sans CB", "Rejoignez 10 000 marketeurs"
+**Achat/conversion:** "Commandez avant minuit", "Ajoutez au panier — livraison offerte", "Démarrez votre essai de 14 jours"
+**Lead generation:** "Téléchargez l'étude complète", "Réservez votre démo de 20 minutes", "Obtenez votre audit gratuit"
 
-### Top 5 CTA Patterns by Form Type
-
-**Bouton principal (primary CTA)**
-- `Je veux [bénéfice] →`
-- `Commencer maintenant`
-- `Obtenir mon accès gratuit`
-- `Réserver ma démo`
-- `Voir comment ça marche`
-
-**Email opt-in**
-- `Recevoir les conseils gratuitement`
-- `Je m'inscris`
-- `Oui, je veux [promesse]`
-- `Envoyer-moi le guide`
-- `Rejoindre [X] professionnels`
-
-**Achat / conversion directe**
-- `Commander maintenant`
-- `Ajouter au panier`
-- `Je profite de l'offre`
-- `Accéder au programme`
-- `Payer en [X] fois sans frais`
-
-**Lead gen / devis**
-- `Obtenir mon devis gratuit`
-- `Parler à un expert`
-- `Demander une démo`
-- `Je veux être rappelé`
-- `Analyser mon site gratuitement`
-
-**Contenu / nurture**
-- `Lire la suite`
-- `Télécharger le guide`
-- `Voir les résultats`
-- `Découvrir les témoignages`
-- `Regarder la vidéo`
-
-Full CTA bank with 50+ options by sector: see `references/french-frameworks.md`
+For the full CTA bank (50+ options across all categories), see `references/french-frameworks.md` Section 4.
 
 ---
 

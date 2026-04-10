@@ -192,6 +192,14 @@ Examples:
 
 Warning: This formula is saturated. Only use when you have a genuinely strong position to back up.
 
+### Choosing a Hook Formula
+
+No formula is universally best — match to your goal:
+- **Highest engagement:** Story Open and Before/After (drive comments and shares through narrative)
+- **Highest reach:** Contrarian and Myth-Busting (algorithm rewards debate and dwell time)
+- **Safest for new accounts:** Direct Value and How-To (reliable performance, low risk)
+- **Use sparingly:** Unpopular Opinion (saturated — audiences are fatigued on this format)
+
 ---
 
 ## 5. Post Structure Patterns
@@ -370,3 +378,10 @@ Calibrate pillar distribution to where your audience is in this progression.
 **10. Copying viral formats without substance** — Posting a carousel "framework" with no real insight because it's the trending format. Format follows substance, not the other way around.
 
 **11. Cross-posting without adaptation** — Pasting your Instagram caption or newsletter intro verbatim. Each platform has a different register, format, and reader expectation.
+
+---
+
+## Related References
+
+- **`references/human-voice-rules.md`** — All banned vocabulary (Section 1) applies to LinkedIn posts. Corporate jargon like "leverage," "synergy," "streamline" kills engagement on LinkedIn just as it does elsewhere.
+- **`references/tone-dimensions.md`** — Match post tone to brand voice dimensions. LinkedIn typically operates at Formality 2-3, Authority 3-4, Warmth 3-4. Adjust CTA style to match brand Directness score.

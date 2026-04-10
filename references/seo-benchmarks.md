@@ -284,3 +284,11 @@ Changing only the publication date produces no freshness benefit and can harm tr
 - Include methodology (sample size, time period, data source)
 - Format data for easy citation (tables, charts, labeled figures)
 - Contrarian or surprising findings get shared and linked more
+
+---
+
+## Related References
+
+- **`references/human-voice-rules.md`** — AI detection avoidance and readability serve the same goal. The burstiness rules (Section 3) complement the readability targets above. Both contribute to E-E-A-T "trustworthiness" signals.
+- **`references/tone-dimensions.md`** — Authority dimension (score 4-5) is especially important for link-worthy content and E-E-A-T expertise signals.
+- **`references/french-frameworks.md`** — For full French SEO guidance beyond the brief comparison table above, see Section 6 (SEO en français) in french-frameworks.md. Includes URL rules, meta description conventions, and keyword suffix patterns specific to French.

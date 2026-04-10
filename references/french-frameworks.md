@@ -3,6 +3,21 @@
 Guide de référence complet pour la rédaction persuasive en français.
 Toutes les règles, formules, et nuances culturelles pour écrire juste.
 
+## Table of Contents
+
+1. [Matrice de décision tu/vous](#1-matrice-de-décision-tuvous)
+2. [Règles typographiques françaises](#2-règles-typographiques-françaises)
+3. [Formules de titres français](#3-formules-de-titres-français)
+4. [Banque de CTA français](#4-banque-de-cta-français)
+5. [Mots-clés de puissance](#5-mots-clés-de-puissance)
+6. [SEO en français](#6-seo-en-français)
+7. [Nuances culturelles](#7-nuances-culturelles)
+8. [Conventions email](#8-conventions-email)
+9. [Faux-amis (false friends)](#9-faux-amis-false-friends)
+10. [Anglicismes : éviter vs acceptés](#10-anglicismes--éviter-vs-acceptés)
+11. [Pièges de traduction](#11-pièges-de-traduction)
+12. [Spectre des registres](#12-spectre-des-registres)
+
 ---
 
 ## 1. Matrice de décision tu/vous
@@ -634,3 +649,11 @@ L'auto-dérision est permise. La marque a un point de vue, elle ne cherche pas �
 
 *Référence interne — copywriting-skill v1.0*
 *Maintenu dans : `references/french-frameworks.md`*
+
+---
+
+## Related References
+
+- **`references/human-voice-rules.md`** — Section 8 covers French-specific anti-AI rules (banned French vocabulary, banned openings). Apply those rules alongside this reference.
+- **`references/seo-benchmarks.md`** — Section "French vs English SEO Differences" provides comparative metrics. Use alongside Section 6 above for complete French SEO guidance.
+- **`references/tone-dimensions.md`** — Section 12 (Spectre des registres) above maps to tone dimensions. French B2B typically scores Formality 3-5, while French DTC/startup scores Formality 1-3.

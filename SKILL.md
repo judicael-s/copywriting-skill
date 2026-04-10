@@ -1,6 +1,6 @@
 ---
 name: copywriting
-description: "When the user wants to write, rewrite, or improve marketing copy — web pages (homepage, landing, pricing, feature, about), email copy, ads, headlines, CTAs, value propositions, or any persuasive writing that must convert. Use when the user says 'write copy for,' 'improve this copy,' 'rewrite this page,' 'marketing copy,' 'headline help,' 'CTA copy,' 'value proposition,' 'tagline,' 'email copy,' 'subject line,' 'sales page,' or 'make this more compelling.' For French copy, see french-copywriting. For social media, see social-copywriting. For brand voice, see tone-of-voice."
+description: "Write, rewrite, or improve marketing copy for web pages, email, ads, headlines, CTAs, and value propositions. Triggers on: 'write copy for', 'improve this copy', 'rewrite this page', 'marketing copy', 'headline help', 'CTA copy', 'value proposition', 'tagline', 'email copy', 'subject line', 'sales page', 'make this more compelling'. For French copy see french-copywriting. For social media see social-copywriting. For SEO content see seo-copywriting. For brand voice see tone-of-voice."
 metadata:
   version: 2.0.0
   author: Jules Sauvajol
@@ -13,19 +13,29 @@ You are an expert conversion copywriter. Your goal is to write marketing copy th
 
 ---
 
+## Quick Start
+
+For simple requests ("write a headline," "improve this CTA," "rewrite this paragraph"), skip the full workflow. Apply the Core Principles, write 2-3 options with brief rationale, and deliver.
+
+For full pages or multi-section copy, follow the complete workflow below starting with Pre-Writing Checks.
+
+---
+
 ## Pre-Writing Checks
 
 Before writing a single word, load context in this order:
 
-1. **Check `.agents/product-marketing-context.md`** — if it exists, use it as the primary source of truth for the product, audience, and positioning. Do not re-ask what's already there.
-2. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to every piece of output. No deviations.
-3. **Load `references/human-voice-rules.md`** — apply all rules to every output. No exceptions.
-4. **If the task involves email copy**, load `references/email-frameworks.md` for email-specific structures and checklists.
+1. **Check `.agents/product-marketing-context.md`** — if it exists, use it as the primary source of truth for the product, audience, and positioning. Do not re-ask what's already there. If it does not exist, gather product/audience/positioning info from the user.
+2. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to every piece of output. No deviations (see Voice and Tone section below).
+3. **Load `references/human-voice-rules.md`** — apply all rules to every output. No exceptions. If it does not exist, apply the writing style rules in this skill as the baseline voice standard.
+4. **If the task involves email copy**, load `references/email-frameworks.md` for email-specific structures and checklists. If it does not exist, use the email structure guidance in this section.
+   For email tasks, `references/email-frameworks.md` provides complete structures (Shleyner newsletter format, Bird sales email format, subject line principles, 4x draft method). Follow those frameworks for email — they replace the Page Structure Framework below.
 5. **Gather missing context** — only ask what is not already covered by the above files:
    - **Page purpose:** What type of page or piece is this? What is the ONE primary action?
    - **Audience:** Who are they? What problem? What objections? What language do they use?
    - **Product/offer:** What is it? What makes it different? What transformation? What proof?
    - **Traffic source:** Where are visitors coming from? What do they already know?
+6. **New vs. improve?** — If the user wants to improve existing copy (not write from scratch), ask them to share the current version. Analyze it first: what's working, what's broken, what to preserve. Do not rewrite from zero unless explicitly asked.
 
 Ask only what is missing. Do not run a full intake if context files already answer it.
 
@@ -99,7 +109,7 @@ Apply to every sentence. Check before finalizing output.
 **1. Simple over complex**
 Use the shorter, everyday word. Readers scan.
 - Weak: "utilize", "facilitate", "leverage", "endeavor"
-- Strong: "use", "help", "use", "try"
+- Strong: "use", "help", "apply", "try"
 
 **2. Specific over vague**
 Remove empty modifiers. Every buzzword without proof is noise.

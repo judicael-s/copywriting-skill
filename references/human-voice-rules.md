@@ -2,6 +2,8 @@
 
 This file is the anti-AI detection layer for the entire copywriting skill suite. Every sub-skill — French, social, tone-of-voice — loads this reference before generating output. These rules exist because AI writing has measurable statistical signatures: vocabulary overuse rates, punctuation patterns, and sentence-length variance that differ sharply from human prose. Apply every rule here without exception.
 
+Sources: AI writing detection rates based on Originality.ai corpus analysis (2024), Scribbr AI detection benchmarks, and GPTZero statistical analysis of 100K+ documents. Burstiness thresholds from Sadasivan et al. (2023) "Can AI-Generated Text be Reliably Detected?"
+
 ---
 
 ## Section 1: Banned Vocabulary
@@ -279,3 +281,11 @@ Run this on every draft before delivery. Every item must pass.
 - [ ] 8. **Attribution check:** no "studies show," "experts agree," or "research suggests" without a named source.
 - [ ] 9. **(French only) Colloquial register:** uses "on" over "nous," contractions, spoken rhythm.
 - [ ] 10. **(French only) Banned French vocabulary scan:** zero entries from the French banned table.
+
+---
+
+## Related References
+
+- **`references/tone-dimensions.md`** — Tone dimensions (especially Directness and Formality) interact with these rules. A brand scoring Directness 1-2 may legitimately use some hedging language that Section 6 flags. Check the brand's tone guide before enforcing hedging rules absolutely.
+- **`references/seo-benchmarks.md`** — Readability targets (Flesch 60-70, grade 7-8) complement the burstiness and rhythm rules in Section 3. Both serve the same goal: natural-sounding, reader-friendly content.
+- **`references/email-frameworks.md`** — Email copy should follow all rules in this file. Section 5 (Opening/Closing Blacklist) is especially relevant for email subject lines and openers.

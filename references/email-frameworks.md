@@ -86,3 +86,10 @@ Before sending, verify:
 - [ ] CTA is big, clear, simple
 - [ ] Read aloud — sounds like someone talking
 - [ ] PS contains the most direct version of the ask
+
+---
+
+## Related References
+
+- **`references/human-voice-rules.md`** — Apply anti-AI detection rules to all email copy. Especially Section 5 (Opening/Closing Blacklist) and Section 3 (Sentence Rhythm).
+- **`references/tone-dimensions.md`** — Match email tone to brand voice dimensions. Transactional emails may use different formality/warmth levels than marketing emails.

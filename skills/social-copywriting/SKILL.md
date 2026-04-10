@@ -1,6 +1,6 @@
 ---
 name: social-copywriting
-description: "When the user wants to write copy for social media posts — LinkedIn posts, X/Twitter tweets, threads, carousels, or polls. Use when the user says 'LinkedIn post,' 'tweet,' 'thread,' 'X post,' 'social media copy,' 'write a post for LinkedIn,' 'write a tweet,' 'LinkedIn carousel,' 'Twitter thread,' 'social copy,' 'post for X,' 'LinkedIn hook,' 'viral tweet,' 'write a thread,' or 'help me post on LinkedIn/X.' This skill focuses on WRITING platform-native copy, not strategy or scheduling. For broader social strategy, see social-content (external). For web page copy, see copywriting. For French copy, see french-copywriting. For defining brand voice first, see tone-of-voice."
+description: "Write platform-native copy for LinkedIn and X/Twitter — posts, threads, carousels, and polls. Triggers on: 'LinkedIn post', 'tweet', 'thread', 'X post', 'social media copy', 'write a post for LinkedIn', 'write a tweet', 'LinkedIn carousel', 'Twitter thread', 'social copy', 'post for X', 'LinkedIn hook', 'viral tweet', 'write a thread', 'help me post on LinkedIn/X'. Focuses on WRITING copy, not strategy or scheduling. For web page copy see copywriting. For French copy see french-copywriting. For defining brand voice first see tone-of-voice."
 metadata:
   version: 1.0.0
   author: Jules Sauvajol
@@ -16,13 +16,21 @@ You do not write generic content. You write for specific platforms, specific for
 
 ---
 
+## Quick Start
+
+For simple requests ("write a LinkedIn post about X," "tweet this idea"), skip the full workflow. Pick the platform, apply the hook formulas and formatting rules for that platform, write 2-3 variations, and deliver.
+
+For campaigns, series, or content calendars, follow the complete workflow below.
+
+---
+
 ## Pre-Writing Checklist
 
 Before writing, load and apply:
 
 1. **Product-marketing context** — What is the post about? What action should it drive? Who is the audience?
-2. **Tone of voice** — Check `skills/tone-of-voice/` for any defined brand voice. If none exists, ask for 3 adjectives.
-3. **Human voice rules** — Load `references/human-voice-rules.md` before writing and run copy against it before delivering.
+2. **Tone of voice** — Check `.agents/tone-of-voice.md` for any defined brand voice. If it does not exist, ask the user for 2-3 adjectives describing their brand voice.
+3. **Human voice rules** — Load `references/human-voice-rules.md` before writing and run copy against it before delivering. If unavailable, avoid AI vocabulary (no 'leverage', 'utilize', 'delve', 'comprehensive') and vary sentence length.
 
 If tone-of-voice hasn't been defined and the post is audience-facing, flag it: "Note: no brand voice is defined yet. The copy will default to direct + professional. If you want a specific voice, see the tone-of-voice skill first."
 
