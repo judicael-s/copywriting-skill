@@ -260,6 +260,7 @@ All output has been checked against `references/human-voice-rules.md`. Annotatio
 | Skill | When to use instead |
 |---|---|
 | `copywriting` | English-language marketing copy |
+| `seo-copywriting` | SEO-optimized content (blog posts, pillar pages, product pages). French SEO differences in `references/seo-benchmarks.md` |
 | `social-copywriting` | LinkedIn posts, tweets, threads — in any language |
 | `tone-of-voice` | Defining brand voice and personality before writing copy |
 | `french-copywriting` | This skill — French marketing copy for any medium |

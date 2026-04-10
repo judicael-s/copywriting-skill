@@ -302,6 +302,7 @@ Do not output a wall of copy. Section labels, annotations, and alternatives are 
 
 ## Related Skills
 
+- **seo-copywriting** — SEO-optimized content: blog posts, pillar pages, product pages, FAQ pages. Keyword strategy, SERP analysis, E-E-A-T signals, featured snippet targeting.
 - **french-copywriting** — same framework, adapted for French-language copy and French audience conventions
 - **social-copywriting** — LinkedIn and X (Twitter) post copy: hooks, formats, platform-specific rules
 - **tone-of-voice** — define brand voice before writing copy, when no voice guide exists yet
